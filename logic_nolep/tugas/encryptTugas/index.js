@@ -5,7 +5,7 @@ console.log('--- Testing cryptoApp ---');
 
 // Test Case 1
 const encryptedText = encrypt('Hello, World!', 'mysecretkey');
-console.log('Encrypted Text:', encryptedText.encryptedText);
+console.log('Encrypted Text:', encryptedText);
 // Output: Encrypted: ... (ciphertext in hexadecimal)
 
 // Test Case 2
