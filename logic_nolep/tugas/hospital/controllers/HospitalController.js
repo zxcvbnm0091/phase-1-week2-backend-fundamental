@@ -4,7 +4,7 @@ import Patient from "../models/patient.js";
 import HospitalView from "../views/view.js";
 
 class HospitalController {
-  // Doctor middleware
+  // access middleware
   static async #checkAccess(allowedRoles) {
     const user = await Employee.validateSession();
     if (!allowedRoles.includes(user.position.toLowerCase())) {
