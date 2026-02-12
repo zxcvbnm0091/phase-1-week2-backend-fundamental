@@ -19,6 +19,7 @@ class Employee {
     this.sessionToken = null;
     this.isLogin = false;
   }
+
   // Hash original password
   static #hashPassword(plainPassword) {
     return createHash("sha256").update(plainPassword).digest("hex");
@@ -141,10 +142,6 @@ class Employee {
       }
     };
     this.findAll(handleLogged);
-  }
-
-  static async findAllAsync() {
-    return this.findAllAsync();
   }
 
   //Get all employees list (Asynchronous)
