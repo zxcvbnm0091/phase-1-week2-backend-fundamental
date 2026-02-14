@@ -11,9 +11,7 @@ const rl = createInterface({
 async function game() {
   console.log(chalk.green("=== Silent Chess ==="));
   console.log(
-    chalk.yellow.bold(
-      "> No checkmate notification: Watch the board closely!\n",
-    ),
+    chalk.yellow.bold("> No check protection. Watch the board closely!\n"),
   );
   createBoard();
   printBoard();
