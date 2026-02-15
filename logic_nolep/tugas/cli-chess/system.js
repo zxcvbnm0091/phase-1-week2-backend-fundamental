@@ -2,6 +2,7 @@ import { parser } from "./helper.js";
 import {
   getBishopMoves,
   getKingMoves,
+  getKnightMoves,
   getPawnMoves,
   getQueenMoves,
   getRookMoves,
@@ -87,6 +88,8 @@ function getPossibleMoves(board, row, col, piece) {
       return getPawnMoves(board, row, col, piece);
     case "rook":
       return getRookMoves(board, row, col, piece);
+    case "knight":
+      return getKnightMoves(board, row, col, piece);
     case "bishop":
       return getBishopMoves(board, row, col, piece);
     case "queen":
